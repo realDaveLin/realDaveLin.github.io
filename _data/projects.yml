@@ -1,0 +1,17 @@
+featured:
+  - name: Project 1
+    description: Description 1
+    link: #
+  - name: Project 2
+    description: Description 2
+    link: #
+  - name: Project 3
+    description: Description 3
+    link: #
+others:
+  - name: Project 4
+    description: Description 4
+    link: #
+  - name: Project 5
+    description: Description 5
+    link: #

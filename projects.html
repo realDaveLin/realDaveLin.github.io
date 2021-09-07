@@ -1,0 +1,25 @@
+---
+layout: standard
+title: Project list
+header: David's Projects
+---
+{% for featproj in site.data.projects.featured %}
+<div class="card">
+    <div class="card-header">
+        <div class="card-title h5">{{ featproj.name }}</div>
+    </div>
+    <div class="card-body">{{ featproj.description }}</div>
+    <div class="card-footer">
+        <a href="{{ featproj.link }}" class="btn btn-link">Go</a>
+    </div>
+</div>
+{% endfor %}
+{% for othrproj in site.data.projects.others %}
+<div class="tile">
+    <div class="tile-content">
+        <p class="tile-title text-bold">{{ othrproj.name }}</p>
+        <p class="tile-subtitle">{{ othrproj.description }}</p>
+    </div>
+    <div class="tile-action"><a href="{{ othrproj.link }}" class="btn btn-link">Go</a></div>
+</div>
+{% endfor %}
